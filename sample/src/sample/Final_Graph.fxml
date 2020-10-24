@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="913.0" style="-fx-background-color: #81d4fa;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Main">
+   <children>
+      <BarChart layoutX="290.0" layoutY="168.0" prefHeight="274.0" prefWidth="568.0" style="-fx-background-color: #b3e5fc;">
+        <xAxis>
+          <CategoryAxis label="Bad stuff" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Concentration" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <AnchorPane id="contamination_graph" layoutX="6.0" prefHeight="495.0" prefWidth="257.0" style="-fx-background-color: #29b6f6;">
+         <children>
+            <ImageView fitHeight="168.0" fitWidth="212.0" layoutX="45.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@purity.png" />
+               </image>
+            </ImageView>
+            <Button id="back3" layoutX="102.0" layoutY="422.0" minWidth="50.0" mnemonicParsing="false" onAction="#back_to_start" prefHeight="40.0" prefWidth="50.0" text="Back" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="285.0" prefHeight="151.0" prefWidth="577.0">
+         <children>
+            <Text fill="#088d16" layoutX="86.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Water is: Clean">
+               <font>
+                  <Font size="53.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="536.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@iconmonstr-battery-7-240.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="42.0" layoutX="576.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@solar-panel.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
